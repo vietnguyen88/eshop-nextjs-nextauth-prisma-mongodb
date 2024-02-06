@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
+import logo from '../../public/logo.png'
 
 const navigation = {
   categories: [
@@ -35,8 +36,8 @@ const navigation = {
       ],
       sections: [
         {
-          id: "iphone15",
-          name: "Iphone 15",
+          id: "phone",
+          name: "Phone",
           items: [
             { name: "Iphone 15 Pro", href: "#" },
             { name: "phone 15 Pro Max", href: "#" },
@@ -75,8 +76,8 @@ const navigation = {
       ],
       sections: [
         {
-          id: "galaxy",
-          name: "Galaxy",
+          id: "phone",
+          name: "Phone",
           items: [
             { name: "Galaxy S24", href: "#" },
             { name: "Galaxy S23", href: "#" },
@@ -317,8 +318,8 @@ export default function Example() {
                     height={200}
                     width={200}
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
+                    src={logo}
+                    alt="logo"
                   />
                 </Link>
               </div>
